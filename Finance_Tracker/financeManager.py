@@ -10,4 +10,5 @@ with open(file, mode='r') as csv_file:
         date = row[0]
         name = row[1]
         amount = float(row[2])
+        balance = float(row[3])
         print(row)
