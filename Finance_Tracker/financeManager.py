@@ -6,7 +6,7 @@ file = f"{MONTH}.csv"
 
 transactions = []
 
-running_balance = []
+running_balance = [0]
 
 with open(file, mode='r') as csv_file:
     csv_reader = csv.reader(csv_file)
