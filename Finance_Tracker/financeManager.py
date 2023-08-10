@@ -18,6 +18,8 @@ with open(file, mode='r') as csv_file:
         category = 'other'
         if name == "Trader Joes Comp":
             category = 'Paycheck'
+        if name == Subscriptions:
+            category = "Subscription"
         amount = float(row[2])
         balance = float(row[3])
         transaction = ((date, name, category, amount))
