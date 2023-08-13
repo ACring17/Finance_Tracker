@@ -6,7 +6,7 @@ file = f"{MONTH}.csv"
 
 transactions = []
 
-running_balance = [0]
+running_balance = 0
 
 Subscriptions = {'Spotify USA', 'MYBESTBUY', 'MICROSOFT YEARLY'}
 
@@ -22,5 +22,6 @@ with open(file, mode='r') as csv_file:
             category = "Subscription"
         amount = float(row[2])
         balance = float(row[3])
+        running_balance += amount
         transaction = ((date, name, category, amount))
         print(transaction)
