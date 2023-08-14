@@ -23,7 +23,7 @@ def personalFin(file, Subscriptions):
                 category = "Subscription"
             amount = float(row[2])
             balance = float(row[3])
-            running_balance += amount
+            balance += amount
             transaction = ((date, name, category, amount))
             transactions.append(transaction)
         return transactions
