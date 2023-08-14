@@ -1,6 +1,6 @@
 import csv
 
-MONTH = 'may'
+MONTH = 'May', 'June', 'July'
 
 file = f"{MONTH}.csv"
 
